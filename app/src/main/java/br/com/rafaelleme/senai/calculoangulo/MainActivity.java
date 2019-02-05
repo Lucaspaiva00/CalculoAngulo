@@ -3,6 +3,7 @@ package br.com.rafaelleme.senai.calculoangulo;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rbCosseno.setOnClickListener(this);
         rbTangente.setOnClickListener(this);
         btnCalcular.setOnClickListener(this);
+
+        Log.i("SENAI", "Esse é meu primeiro LOG");
+
     }
     public double calcularSeno(double angulo){
      return Math.sin(Math.toRadians(angulo));
